@@ -10,8 +10,10 @@ class Account:
 
     def deposit(self):
         dep_amount=int(input('Enter amount you want to deposit : '))
-        return dep_amount
+        dep_amount+=self.balance
+        return f'Your new balance is {dep_amount}'
 
     def withdraw(self):
         wthdr_amount = int(input('Enter amount you want to withdraw : '))
-        return wthdr_amount
+        self.balance-=wthdr_amount
+        return f'Your new balance is{self.balance}'
