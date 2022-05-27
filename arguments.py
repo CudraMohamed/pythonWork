@@ -7,5 +7,5 @@ def greet_multiple(*names):
     print(names)
 
 def greet_multiple2(*names):
-    for name in names:
-        print(f"Hello {names}")
+ for name in names:
+    print(f"Hello {names}")
