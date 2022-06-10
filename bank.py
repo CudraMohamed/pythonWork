@@ -36,5 +36,5 @@ class Account:
     def withdrawals_statement (self):
         for withdrawn in self.withdrawals:
             print(f"You have withdrawn: {withdrawn}")
-    def balance(self):
+    def current_balance(self):
         return f"Your balance is {self.balance}"
