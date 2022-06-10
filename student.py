@@ -20,4 +20,6 @@ class Student :
         return f'Hello {self.first_name} {self.second_name},your year of birth is ',birth_year
 
     def initials(self):
-        return f'My name initials are {self.first_name[0],self.second_name[0]}'
+        # return f'My name initials are {self.first_name[0],self.second_name[0]}'
+        name_initials=f"{self.first_name[0]} {self.second_name[0]}"
+        return name_initials.upper()
